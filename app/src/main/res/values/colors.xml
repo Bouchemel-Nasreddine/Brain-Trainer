@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000</color>
+    <color name="red">#EE0015</color>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="score1">#4A7BA7</color>
+    <color name="score2">#04B4B3</color>
+    <color name="score3">#10CAC9</color>
+    <color name="score4">#F5A623</color>
+    <color name="score5">#FF7D50</color>
+    <color name="score6">#FC6644</color>
+    <color name="score7">#E75F40</color>
+    <color name="score8">#E13A20</color>
+    <color name="score9">#D93218</color>
+    <color name="score10plus">#C03823</color>
+</resources>
