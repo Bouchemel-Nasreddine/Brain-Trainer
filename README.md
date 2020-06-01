@@ -1,6 +1,6 @@
 # Brain-Trainer
 
-This an Android app that allows you to train your brain a little bit. I created this app for the sake of refreshing my knowledge after
+This is an Android app that allows you to train your brain a little bit. I created this app for the sake of refreshing my knowledge after
 a pause of two months.
 
 This project was created by Nasreddine BOUCHEMEL.
