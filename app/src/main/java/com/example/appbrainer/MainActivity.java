@@ -2,6 +2,8 @@ package com.example.appbrainer;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.drawable.Drawable;
+import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.View;
@@ -159,6 +161,8 @@ public class MainActivity extends AppCompatActivity {
     public void ResetUI (TextView score, TextView taskView, TextView sug1, TextView sug2,
                          TextView sug3, TextView sug4, TextView score_description ) {
         score.setText("0/00");
+        GradientDrawable circle = (GradientDrawable) score.getBackground();
+        circle.setColor(getResources().getColor(R.color.score1));
         taskView.setText("15 + 15");
         sug1.setText("45");
         sug2.setText("16");
@@ -227,6 +231,40 @@ public class MainActivity extends AppCompatActivity {
             score_description.setText(remarks[i]);
         } else {
             score_description.setText(remarks[remarks.length-1]);
+        }
+
+        GradientDrawable circle = (GradientDrawable) score.getBackground();
+        switch (i){
+            case 0:
+            case 1:
+                circle.setColor(getResources().getColor(R.color.score1));
+                break;
+            case 2:
+                circle.setColor(getResources().getColor(R.color.score2));
+                break;
+            case 3:
+                circle.setColor(getResources().getColor(R.color.score3));
+                break;
+            case 4:
+                circle.setColor(getResources().getColor(R.color.score4));
+                break;
+            case 5:
+                circle.setColor(getResources().getColor(R.color.score5));
+                break;
+            case 6:
+                circle.setColor(getResources().getColor(R.color.score6));
+                break;
+            case 7:
+                circle.setColor(getResources().getColor(R.color.score7));
+                break;
+            case 8:
+                circle.setColor(getResources().getColor(R.color.score8));
+                break;
+            case 9:
+                circle.setColor(getResources().getColor(R.color.score9));
+                break;
+            default:
+                circle.setColor(getResources().getColor(R.color.score10plus));
         }
 
     }
