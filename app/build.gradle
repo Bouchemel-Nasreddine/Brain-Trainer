@@ -13,6 +13,23 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
+    
+    productFlavors{
+        dev{
+            applicationIdSuffix ".dev"
+            resValue "string", "app_name", "App-Dev"
+            buildConfigField "String", "API_Base_URL", "\"http://dev.abc.com/\""
+        }
+        qa{
+            applicationIdSuffix ".qa"
+            resValue "string", "app_name", "App-QA"
+            buildConfigField "String", "API_Base_URL", "\"http://qa.abc.com/\""
+        }
+        prod{
+            resValue "string", "app_name", "App"
+            buildConfigField "String", "API_Base_URL", "\"http://abc.com/\""
+        }
+    }
 
     buildTypes {
         release {
