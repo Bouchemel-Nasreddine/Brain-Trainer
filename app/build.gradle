@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.2"
-    flavorDimensions "default"
+    flavorDimensions "demo", "full", "dev", "qa", "prod"
 
     defaultConfig {
         applicationId "com.example.appbrainer"
