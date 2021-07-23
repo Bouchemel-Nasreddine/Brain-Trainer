@@ -16,6 +16,20 @@ android {
     }
     
     productFlavors{
+        demo {
+            // Assigns this product flavor to the "version" flavor dimension.
+            // If you are using only one dimension, this property is optional,
+            // and the plugin automatically assigns all the module's flavors to
+            // that dimension.
+            dimension "versionCode"
+            applicationIdSuffix ".demo"
+            versionNameSuffix "-demo"
+        }
+        full {
+            dimension "versionCode"
+            applicationIdSuffix ".full"
+            versionNameSuffix "-full"
+        }
         dev{
             applicationIdSuffix ".dev"
             resValue "string", "app_name", "App-Dev"
